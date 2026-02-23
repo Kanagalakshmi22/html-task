@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanagalakshmi Contact Form</title>
+</head>
+<body>
+
+<h2>Kanagalakshmi's Contact Form</h2>
+
+<form>
+
+    <!-- Name (First letter Capital only) -->
+    <label>Full Name:</label><br>
+    <input type="text" name="name"
+           pattern="^[A-Z][a-zA-Z ]{2,49}$"
+           title="First letter must be capital and only letters allowed"
+           required>
+    <br><br>
+
+    <!-- Email (Must contain @ automatically checked) -->
+    <label>Email:</label><br>
+    <input type="email" name="email"
+           required>
+    <br><br>
+
+    <!-- Phone (Exactly 10 digits) -->
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone"
+           pattern="^[0-9]{10}$"
+           maxlength="10"
+           title="Phone number must be exactly 10 digits"
+           required>
+    <br><br>
+
+    <!-- Subject -->
+    <label>Subject:</label><br>
+    <input type="text" name="subject"
+           minlength="5"
+           required>
+    <br><br>
+
+    <!-- Message -->
+    <label>Message:</label><br>
+    <textarea name="message"
+              minlength="10"
+              required></textarea>
+    <br><br>
+
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+
+</form>
+
+</body>
+</html>
